@@ -3,7 +3,7 @@ import requests
 def show_help():
     print("\nHJÄLP – IP Geolocation Program")
     print("--------------------------------")
-    print("Skriv in en IP-adress för att få geografisk information.")
+    print("Skriv in en IP-adress eller DNS för att få geografisk information.")
     print("Tryck bara Enter för att använda din egen IP-adress.")
     print("Skriv 'help' eller '--help' för att visa denna hjälptext.")
     print("Skriv 'quit' eller 'exit' för att avsluta.\n")
@@ -35,7 +35,7 @@ def get_ip_info(ip):
 if __name__ == "__main__":
     print("IP Geolocation Program – skriv 'help' för hjälp, 'quit' för att avsluta.\n")
     while True:
-        ip = input("Ange IP-adress: ").strip()
+        ip = input("Ange DNS eller IP-adress: ").strip()
 
         if ip.lower() in ["quit", "exit"]:
             print("Avslutar programmet.")
